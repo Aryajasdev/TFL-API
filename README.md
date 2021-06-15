@@ -1,4 +1,4 @@
-# TFL Arrivals Take Home Test
+# TFL Arrivals Take Home
 
 ## About
 The purpose of this test is for us to assess how you analyse requirements, solve problems, approach UX,
