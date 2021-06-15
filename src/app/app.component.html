@@ -1,0 +1,11 @@
+<app-header (OnRefresh)="onShowTop($event)" [No-Of-Trains]="noOfRecords"></app-header>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <app-trains [Trains]="stopPoints?.Eastbound" [TrainType]="'EastBound'"></app-trains>    
+    </div>  
+    <div class="col">
+      <app-trains [Trains]="stopPoints?.Westbound" [TrainType]="'WestBound'"></app-trains>      
+    </div>    
+  </div>
+</div>  

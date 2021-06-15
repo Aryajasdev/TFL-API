@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-header">
+        {{TrainType}} - Tower Hill Underground Station      
+    </div>
+    <div class="card-body">
+        <div class="row">   
+            <div class="card text-dark bg-light mb-3" *ngFor="let train of Trains" style="max-width: 18rem;">
+                <div class="card-header">Destination : {{train?.destinationName}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">Arrival : {{train?.expectedArrival | date:'h:mm:ss a'}}</h5>
+                    <p class="card-text">Live: {{train?.timeToLive | date:'h:mm:ss a'}} - {{train?.direction}}
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Current Location : {{train?.currentLocation}}</li>
+                    <li class="list-group-item">Line Name : {{train?.lineName}}</li>
+                    <li class="list-group-item">At : {{train?.platformName | split: "-"}}</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
